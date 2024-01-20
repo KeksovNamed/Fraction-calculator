@@ -27,7 +27,7 @@ int main()
 	fraction4 = fraction4 * fraction2;	//calculate
 	printf("a=%d/b=%d c=%d/d=%d\n", temporarya, temporaryb, fraction3, fraction4);
 	int x=action;
-	if(x==43)//if the sign is plus then plus
+	if(x==43)//values ​​in scanf %c but I can't compare string to string! Therefore, I compare it with the ASCII value
 	{
 		itemp = temporarya + fraction3;
 	}
