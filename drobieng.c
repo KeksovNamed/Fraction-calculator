@@ -25,7 +25,7 @@ int main()
 	temporaryb = fraction2 * fraction4;	//temporary variables for calculation
 	fraction3 = fraction3 * fraction2;	//calculate
 	fraction4 = fraction4 * fraction2;	//calculate
-	printf("a=%d/b=%d c=%d/d=%d\n", temporarya, temporaryb, fraction3, fraction4);	
+	printf("a=%d/b=%d c=%d/d=%d\n", temporarya, temporaryb, fraction3, fraction4);
 	int x=action;
 	if(x==43)//if the sign is plus then plus
 	{
@@ -72,8 +72,16 @@ int main()
 	wholepart = itemp / temporaryb;	//select the whole part
 	printf("Whole part=%d\n", wholepart);	//print the whole part
 	wholepart2 = itemp % temporaryb;
-	printf("Numerator=%d\n", wholepart2);	//we output the numerator.
-	printf("The result is equal to the whole part=%d %d/%d", wholepart, wholepart2, temporaryb);	//We display the result
+	if(wholepart2==0)
+	{
+		printf("The result is equal to the whole part=%d", wholepart);
+	}
+	else
+	{
+		printf("Numerator=%d\n", wholepart2);
+		printf("The result is equal to the whole part=%d %d/%d", wholepart, wholepart2, temporaryb);
+	}	//We display the result
 
 	return 0;
+}
 }
