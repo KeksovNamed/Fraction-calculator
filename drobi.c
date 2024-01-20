@@ -5,7 +5,7 @@
 
 int main()
 {
-	int fraction1, fraction2, fraction3, fraction4, temporarya, temporaryb, wholepart, wholepart2, itemp, i,integer1,integer2,temporary,temporary2;
+	int fraction1, fraction2, fraction3, fraction4, temporarya, temporaryb, wholepart, fractionalpart, itemp, i,integer1,integer2,temporary,temporary2;
 	volatile char action;
 	printf("Введите целую часть(0 если её нет) пробел дробь(вида 5/4) пробел(знак + - * или /)пробел целую часть(0 если нету) и второю дробь(вида 3/8)\n");
 	scanf("%d %d/%d %c %d %d/%d",&integer1,&fraction1, &fraction2,&action,&integer2,&fraction3, &fraction4);
@@ -71,15 +71,15 @@ int main()
 
 	wholepart = itemp / temporaryb;	//выделяем целую часть
 	printf("Целая часть=%d\n", wholepart);	//печатаем целую часть
-	wholepart2 = itemp % temporaryb;
-	if(wholepart2==0)
+	fractionalpart = itemp % temporaryb;
+	if(fractionalpart==0)
 	{
 		printf("Результат равен целая часть=%d", wholepart);
 	}
 	else
 	{
-		printf("Числитель=%d\n", wholepart2);//выводим числитель.
-		printf("Результат равен целая часть=%d %d/%d", wholepart, wholepart2, temporaryb);	//Вывовим результат
+		printf("Числитель=%d\n", fractionalpart);//выводим числитель.
+		printf("Результат равен целая часть=%d %d/%d", wholepart, fractionalpart, temporaryb);	//Вывовим результат
 	}
 
 	return 0;
