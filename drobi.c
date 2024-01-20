@@ -10,7 +10,7 @@ int main()
 	printf("Введите целую часть(0 если её нет) пробел дробь(вида 5/4) пробел(знак + - * или /)пробел целую часть(0 если нету) и второю дробь(вида 3/8)\n");
 	scanf("%d %d/%d %c %d %d/%d",&integer1,&fraction1, &fraction2,&action,&integer2,&fraction3, &fraction4);
 	printf("Вы ввели %d\n",action);
-	printf("Вы ввели %d/%d %d/%d\n", fraction1, fraction2, fraction3, fraction4);
+	printf("Вы ввели %d %d/%d %d %d/%d\n",integer1, fraction1, fraction2,integer2, fraction3, fraction4);
 	if(integer1>0)
 	{
 		temporary =integer1*fraction2+fraction1;
