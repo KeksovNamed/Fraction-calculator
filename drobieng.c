@@ -10,7 +10,7 @@ int main()
 	printf("Enter the whole part (0 if there is none), space fraction (of the form 5/4), space (sign + - * or /) space the whole part (0 if not present) and the second fraction (of the form 3/8)\n");
 	scanf("%d %d/%d %c %d %d/%d",&integer1,&fraction1, &fraction2,&action,&integer2,&fraction3, &fraction4);
 	printf("You entered %d\n",action);
-	printf("You entered %d/%d %d/%d\n", fraction1, fraction2, fraction3, fraction4);
+	printf("You entered %d %d/%d %d %d/%d\n",integer1, fraction1, fraction2,integer2, fraction3, fraction4);
 	if(integer1>0)
 	{
 		temporary =integer1*fraction2+fraction1;
