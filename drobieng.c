@@ -5,7 +5,7 @@
 
 int main()
 {
-	int fraction1, fraction2, fraction3, fraction4, temporarya, temporaryb, wholepart, wholepart2, itemp, i,integer1,integer2,temporary,temporary2;
+	int fraction1, fraction2, fraction3, fraction4, temporarya, temporaryb, wholepart, fractionalpart, itemp, i,integer1,integer2,temporary,temporary2;
 	volatile char action;
 	printf("Enter the whole part (0 if there is none), space fraction (of the form 5/4), space (sign + - * or /) space the whole part (0 if not present) and the second fraction (of the form 3/8)\n");
 	scanf("%d %d/%d %c %d %d/%d",&integer1,&fraction1, &fraction2,&action,&integer2,&fraction3, &fraction4);
@@ -71,15 +71,15 @@ int main()
 
 	wholepart = itemp / temporaryb;	//select the whole part
 	printf("Whole part=%d\n", wholepart);	//print the whole part
-	wholepart2 = itemp % temporaryb;
-	if(wholepart2==0)
+	fractionalpart = itemp % temporaryb;
+	if(fractionalpart==0)
 	{
 		printf("The result is equal to the whole part=%d", wholepart);
 	}
 	else
 	{
-		printf("Numerator=%d\n", wholepart2);
-		printf("The result is equal to the whole part=%d %d/%d", wholepart, wholepart2, temporaryb);
+		printf("Numerator=%d\n", fractionalpart);
+		printf("The result is equal to the whole part=%d %d/%d", wholepart, fractionalpart, temporaryb);
 	}	//We display the result
 
 	return 0;
