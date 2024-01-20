@@ -27,7 +27,7 @@ int main()
 	fraction4 = fraction4 * fraction2;	//вычисляем
 	printf("a=%d/b=%d c=%d/d=%d\n", temporarya, temporaryb, fraction3, fraction4);	//tmpa=a tmpb=b а c и d без изменений
 	int x=action;
-	if(x==43)//если знак плюс тогда плюс
+	if(x==43)//значения в scanf %c но я не могу сравнить строку со строкой! Поэтому сравниваю со значением ASCII
 	{
 		itemp = temporarya + fraction3;
 	}
