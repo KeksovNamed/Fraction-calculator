@@ -71,9 +71,16 @@ int main()
 
 	wholepart = itemp / temporaryb;	//выделяем целую часть
 	printf("Целая часть=%d\n", wholepart);	//печатаем целую часть
-	wholepart2 = itemp % temporaryb;	//tmpi2=оставшееся в числитиле.
-	printf("Числитель=%d\n", wholepart2);	//выводим числитель.
-	printf("Результат равен целая часть=%d %d/%d", wholepart, wholepart2, temporaryb);	//Вывовим результат
+	wholepart2 = itemp % temporaryb;
+	if(wholepart2==0)
+	{
+		printf("Результат равен целая часть=%d", wholepart);
+	}
+	else
+	{
+		printf("Числитель=%d\n", wholepart2);//выводим числитель.
+		printf("Результат равен целая часть=%d %d/%d", wholepart, wholepart2, temporaryb);	//Вывовим результат
+	}
 
 	return 0;
 }
