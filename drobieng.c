@@ -1,4 +1,4 @@
-/*Программа вычисляет сумму,разность(минус), произведение(умножение) и частное(деление) дробей (a/b) и (c/d) v1.0 by Keksovname*/
+/*The program calculates the sum, difference (minus), product (multiplication) and quotient (division) of fractions (a/b) and (c/d) v1.0 by Keksovname*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
